@@ -2,7 +2,7 @@
 证券异常交易行为监控系统。九州证券系统开发部自主设计、研发的证券异常交易行为监控系统，采用Storm+Esper架构实现，支持金证交易系统的指令拦截 、复制与解析。
 
 # 版权说明
-> 简单陈述项目的开源协议，以及使用该项目的开源原则
+
 
 # Overview
 异常交易行为监控系统主要分为交易指令处理层、事前风控子系统、事中风控子系统、事后风控子系统、风控的web子系统。异常交易行为监控系统直接拦截和旁路集中交易系统的用户交易指令，并交给不同的风控子系统处理。<br />
@@ -31,7 +31,7 @@ req_replica	应用请求消息的复制队列<br />
 # 风控引擎
 storm介绍<br />
 Storm是一个免费并开源的分布式实时计算系统。利用Storm可以很容易做到可靠地处理无限的数据流，像Hadoop批量处理大数据一样，Storm可以实时处理数据。
-在异常交易行为监控系统里，storm主要用在事中风控子系统里，负责人物的管理及分配。<br />
+在异常交易行为监控系统里，storm主要用在事中风控子系统里，负责任务的管理及分配。<br />
 storm架构图：<br />
 ![Alt text](https://github.com/JiuzhouSec/nightwatch/raw/master/Screenshots/storm.jpg)
 
@@ -48,7 +48,6 @@ EPL语句的语法与SQL相似，事件处理语言（EPL）是SQL标准语言�
 目前开源的规则有：<br />
 ![Alt text](https://github.com/JiuzhouSec/nightwatch/raw/master/Screenshots/webwxgetmsgimg.jpg)
 # 如何安装
-> 介绍如何从源码编译、安装各个组件
 
 # 如何使用
 ![Alt text](https://github.com/JiuzhouSec/nightwatch/raw/master/Screenshots/7.png)
